@@ -1,8 +1,9 @@
 var n_day;
 const date = new Date();
 
-function getDay(n_day = date.getDay)
+function getDay(n_day = date.getDay())
 {
+    console.log(n_day);
     let dia;
     switch(n_day)
     {
@@ -29,5 +30,6 @@ function getDay(n_day = date.getDay)
             break;
     }
     
-    console.log(dia);    
+    console.log(dia);   
+    document.querySelector("#diadehoy").textContent = dia; 
 }
