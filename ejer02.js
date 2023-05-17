@@ -1,9 +1,7 @@
 function Invertir()
 {
     let palabra = document.getElementById("palabra").value;
-    const chars= palabra.split('');
-    let pal_invert = "";
+    const pal_invert= palabra.split('').reverse().join('');
     console.log(palabra);
-    alert(chars);
     document.getElementById("pal_invert").innerHTML = pal_invert;
 }
