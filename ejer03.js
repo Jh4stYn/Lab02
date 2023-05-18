@@ -21,3 +21,6 @@ function countTimer(){
     mins.innerHTML = minsT;
     seconds.innerHTML = secondsT;
   }
+  
+countTimer();
+setInterval(countTimer, 1000);
