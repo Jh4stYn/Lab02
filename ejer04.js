@@ -1,25 +1,25 @@
-var entrada
-let parametros
-let codigo= ""
+var input
+let parameters
 let url = ""
+let codigo= ""
 
-function retornarCodigo()
+function returnCodigo() 
 {
-    let pack = document.getElementById("pack-content")
-    entrada = document.getElementById("entrada")
-    //Opteniendo valores y resteando input
-    url = entrada.value
-    entrada.value = ""
-    let enlace = /(https:\/\/)?(meet.google.com\/)(...)-(....)-(...)(.+)?/i
-    parametros = url.match(enlace)
-    if(parametros != null)
+    let box = document.getElementById("box-content")
+    input = document.getElementById("input")
+    url = input.value
+    input.value = ""
+    let expresion = /(https:\/\/)?(meet.google.com\/)(...)-(....)-(...)(.+)?/i
+    parameters = url.match(expresion)
+    if(parameters != null) 
     {
-        codigo = `${parametros[3]}${parametros[4]}${parametros[5]}`
-        pack.innerHTML = 
+        codigo = `${parameters[3]}${parameters[4]}${parameters[5]}`
+        box.innerHTML = 
         `<h1>El código es: ${codigo}</h1>
         <div>
         <button onclick='location.reload()'>Volver</button>
-        </div>`  
+        </div>`
     }
+
 
 }
