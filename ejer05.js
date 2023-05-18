@@ -21,7 +21,9 @@ function generarTabla()
           miTabla = miTabla + "</tr><tr>"
         }
     }
-    
+    miTabla = miTabla + "</tr></table>"
+    let modificar = document.getElementById("modificar");
+    modificar.innerHTML = miTabla + "<div class='centrado'> <br><p id = 'boton'><button onclick='sumar()'>Sumar</button></p><p id='suma'></p></div>";
 }
 function sumar()
 {
@@ -29,4 +31,6 @@ function sumar()
     {
       sumatoria = sumatoria + numerosTabla[i];
     }
+    let modificar = document.getElementById("suma");
+    modificar.innerHTML = 'La sumatoria de la tabla es '+sumatoria  ;
 }
