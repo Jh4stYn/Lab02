@@ -3,7 +3,7 @@ const hours = document.getElementById("hours");
 const mins = document.getElementById("mins");
 const seconds = document.getElementById("seconds");
 
-const aqp = '15 Aug 2022';
+const aqp = '15 Aug 2023';
 
 function countTimer(){
     const aqpDate = new Date(aqp);
