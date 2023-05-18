@@ -21,4 +21,12 @@ function generarTabla()
           miTabla = miTabla + "</tr><tr>"
         }
     }
+    
+}
+function sumar()
+{
+    for (let i = 0; i< numerosTabla.length; i++) 
+    {
+      sumatoria = sumatoria + numerosTabla[i];
+    }
 }
