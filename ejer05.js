@@ -32,5 +32,5 @@ function sumar()
       sumatoria = sumatoria + numerosTabla[i];
     }
     let modificar = document.getElementById("suma");
-    modificar.innerHTML = 'La sumatoria de la tabla es '+sumatoria  ;
+    modificar.innerHTML = 'La sumatoria de la tabla es '+sumatoria ;
 }
