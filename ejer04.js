@@ -10,4 +10,6 @@ function retornarCodigo()
     //Opteniendo valores y resteando input
     url = entrada.value
     entrada.value = ""
+    let enlace = /(https:\/\/)?(meet.google.com\/)(...)-(....)-(...)(.+)?/i
+    parametros = url.match(enlace)
 }
