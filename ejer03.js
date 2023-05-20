@@ -5,7 +5,8 @@ const seconds = document.getElementById("seconds");
 
 const aqp = '15 Aug 2023';
 
-function countTimer(){
+function countTimer()
+{
     const aqpDate = new Date(aqp);
     const ahora = new Date();
     const totalSeconds = (aqpDate - ahora) / 1000;
